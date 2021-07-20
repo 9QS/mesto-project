@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mesto Russia</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="page">
+    <header class="header">
+        <img class="header__logo" src="images/logo.svg" alt="Не удалось загрузить изображение">
+    </header>
+    <main class="content">
+        <section class="profile">
+            <img class="profile__avatar" src="./images/image.jpg" alt="Не удалось загрузить изображение">
+            <div class="profile__info">
+                <div class="profile__info-item">
+                    <h1 class="profile__name">Жак-Ив-Кусто</h1>
+                    <button type="button" class="profile__edit-button" name="edit-button"></button>
+                </div>
+                <p class="profile__about-me">Исследователь океана</p>
+            </div>
+            <button class="profile__add-button" type="button" name="add-button"></button>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <img class="card__image" src="./images/1.jpg" alt="Не удалось загрузить изображение">
+                <h2 class="card__title">Карачаевск</h2>
+                <button class="card__like" type="button" name="like"></button>
+            </div>
+            <div class="card">
+                <img class="card__image" src="./images/2.jpg" alt="Не удалось загрузить изображение">
+                <h2 class="card__title">Гора Эльбрус</h2>
+                <button class="card__like" type="button" name="like"></button>
+            </div>
+            <div class="card">
+                <img class="card__image" src="./images/3.jpg" alt="Не удалось загрузить изображение">
+                <h2 class="card__title">Домбай</h2>
+                <button class="card__like" type="button" name="like"></button>
+            </div>
+            <div class="card">
+                <img class="card__image" src="./images/4.jpg" alt="Не удалось загрузить изображение">
+                <h2 class="card__title">Гора Эльбрус</h2>
+                <button class="card__like" type="button" name="like"></button>
+            </div>
+            <div class="card">
+                <img class="card__image" src="./images/5.jpg" alt="Не удалось загрузить изображение">
+                <h2 class="card__title">Карачаевск</h2>
+                <button class="card__like" type="button" name="like"></button>
+            </div>
+            <div class="card">
+                <img class="card__image" src="./images/6.jpg" alt="Не удалось загрузить изображение">
+                <h2 class="card__title">Карачаевск</h2>
+                <button class="card__like" type="button" name="like"></button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">&copy;2021. Mesto Russia.</p>
+    </footer>
+    <div class="popup">
+        <!--Затемняющий фон-->
+        <div class="popup__content">
+            <button class="popup__close-button" type="button" name="close-form"><!--Кнопка закрытия формы--></button>
+            <form class="form" name="edit-profile">
+                <!--Начало формы-->
+                <h2 class="form__title">Редактировать профиль</h2>
+                <!--Заголовок формы-->
+                <div class="form__items">
+                    <!--Контейнер для полей-->
+                    <input type="text" placeholder="Имя" class="form__item" name="profile-name">
+                    <input type="text" placeholder="О себе" class="form__item" name="profile-about-me">
+                </div>
+                <!--Кнопка отправки-->
+                <input type="submit" class="form__submit-button" value="Сохранить" name="button-save">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

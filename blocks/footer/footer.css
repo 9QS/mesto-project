@@ -1,0 +1,22 @@
+.footer {
+    margin: 67px auto 0;
+    padding-bottom: 36px;
+}
+
+@media (min-width: 984px) {
+    .footer {
+        width: 880px;
+    }
+}
+
+@media (max-width: 983px) {
+    .footer {
+        width: 581px;
+    }
+}
+
+@media (max-width: 633px) {
+    .footer {
+        width: 282px;
+    }
+}

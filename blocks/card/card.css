@@ -1,0 +1,9 @@
+.card {
+    border-radius: 10px;
+    display: grid;
+    max-width: 282px;
+    min-height: 361px;
+    grid-template-rows: 282px 1fr;
+    grid-template-columns: 21px 1fr 22px 20px;
+    background: #fff;
+}

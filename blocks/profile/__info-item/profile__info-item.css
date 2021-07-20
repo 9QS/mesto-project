@@ -1,0 +1,14 @@
+.profile__info-item {
+    display: flex;
+    /*Подключаем флекс*/
+    flex-grow: 1;
+    /*Выставляем ширину, которая займет всё доступное пространство*/
+    min-height: 26px;
+}
+
+@media (max-width: 719px) {
+    .profile__info-item {
+        margin: 26px 0 0 0;
+        justify-content: center;
+    }
+}

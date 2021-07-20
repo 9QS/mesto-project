@@ -1,0 +1,17 @@
+.form {
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+@media (min-width: 720px) {
+    .form {
+        width: 430px;
+    }
+}
+
+@media (max-width: 719px) {
+    .form {
+        width: 282px;
+    }
+}
