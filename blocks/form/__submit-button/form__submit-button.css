@@ -12,9 +12,9 @@
     .form__submit-button {
         width: 358px;
         height: 50px;
-        margin: 48px 0 37px 36px;
         font-size: 18px;
         line-height: 21px;
+        margin: 48px 0 0 0;
     }
 }
 
@@ -22,9 +22,9 @@
     .form__submit-button {
         width: 238px;
         height: 48px;
-        margin: 45px 22px 25px;
         font-size: 14px;
         line-height: 16px;
+        margin: 45px 0 0 0;
     }
 }
 
