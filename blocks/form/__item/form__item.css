@@ -1,9 +1,11 @@
 .form__item {
     outline: none;
     border: 0;
-    height: 50px;
+    min-height: 31px;
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
+    font-size: 14px;
+    line-height: 17px;
 }
 
 @media (min-width: 720px) {
@@ -26,6 +28,4 @@
 
 .form__item::placeholder {
     color: #000;
-    font-size: 14px;
-    line-height: 17px;
 }

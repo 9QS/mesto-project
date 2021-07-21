@@ -2,35 +2,30 @@
     border-bottom: 1px solid rgba(84, 84, 84, .7);
 }
 
-@media (min-width: 985px) {
+@media (min-width: 920px) {
     .header {
         width: 880px;
+        padding: 45px 0 41px;
     }
 }
 
-@media (max-width: 984px) {
+@media (max-width: 919px) {
     .header {
-        width: 660px;
+        width: 700px;
+        padding: 45px 0 41px;
     }
 }
 
-@media (max-width: 755px) {
+@media (min-width: 720px) {
     .header {
-        width: 520px;
+        margin: 0 auto;
     }
 }
 
-@media (min-width: 634px) {
-    .header {
-        margin: 45px auto 0;
-        padding-bottom: 41px;
-    }
-}
-
-@media (max-width: 633px) {
+@media (max-width: 719px) {
     .header {
         margin: 28px auto 0;
-        width: 282px;
-        padding-bottom: 31px;
+        width: 100%;
+        padding: 0 0 31px 27px;
     }
 }
