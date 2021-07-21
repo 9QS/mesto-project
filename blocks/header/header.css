@@ -25,7 +25,8 @@
 @media (max-width: 719px) {
     .header {
         margin: 28px auto 0;
-        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
         padding: 0 0 31px 27px;
     }
 }
