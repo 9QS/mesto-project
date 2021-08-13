@@ -25,59 +25,65 @@
             <button class="profile__add-button" type="button" name="add-button"></button>
         </section>
         <section class="cards">
-            <div class="card">
-                <img class="card__image" src="./images/1.jpg" alt="Не удалось загрузить изображение">
-                <h2 class="card__title">Карачаевск</h2>
-                <button class="card__like" type="button" name="like"></button>
-            </div>
-            <div class="card">
-                <img class="card__image" src="./images/2.jpg" alt="Не удалось загрузить изображение">
-                <h2 class="card__title">Гора Эльбрус</h2>
-                <button class="card__like" type="button" name="like"></button>
-            </div>
-            <div class="card">
-                <img class="card__image" src="./images/3.jpg" alt="Не удалось загрузить изображение">
-                <h2 class="card__title">Домбай</h2>
-                <button class="card__like" type="button" name="like"></button>
-            </div>
-            <div class="card">
-                <img class="card__image" src="./images/4.jpg" alt="Не удалось загрузить изображение">
-                <h2 class="card__title">Гора Эльбрус</h2>
-                <button class="card__like" type="button" name="like"></button>
-            </div>
-            <div class="card">
-                <img class="card__image" src="./images/5.jpg" alt="Не удалось загрузить изображение">
-                <h2 class="card__title">Карачаевск</h2>
-                <button class="card__like" type="button" name="like"></button>
-            </div>
-            <div class="card">
-                <img class="card__image" src="./images/6.jpg" alt="Не удалось загрузить изображение">
-                <h2 class="card__title">Карачаевск</h2>
-                <button class="card__like" type="button" name="like"></button>
-            </div>
         </section>
     </main>
     <footer class="footer">
         <p class="footer__copyright">&copy;2021. Mesto Russia.</p>
     </footer>
-    <div class="popup">
+    <div class="popup" id="popup-edit">
         <!--Затемняющий фон-->
         <div class="popup__content">
-            <button class="popup__close-button" type="button" name="close-form"><!--Кнопка закрытия формы--></button>
+            <button class="popup__close-button" id="button-close-popup-edit" type="button" name="close-form"><!--Кнопка закрытия формы--></button>
             <form class="form" name="edit-profile">
                 <!--Начало формы-->
                 <h2 class="form__title">Редактировать профиль</h2>
                 <!--Заголовок формы-->
                 <!--Контейнер для полей-->
                 <div class="form__items">
-                    <input type="text" placeholder="Имя" class="form__item" name="profile-name">
-                    <input type="text" placeholder="О себе" class="form__item" name="profile-about-me">
+                    <input type="text" id="input-name" placeholder="Имя" class="form__item" required name="profile-name">
+                    <input type="text" id="input-description" placeholder="О себе" required class="form__item" name="profile-about-me">
                 </div>
                 <!--Кнопка отправки-->
-                <input type="submit" class="form__submit-button" value="Сохранить" name="button-save">
+                <button type="button" class="form__submit-button" name="button-save" id="button-submit-profile">Сохранить</button>
             </form>
         </div>
     </div>
+    <div class="popup" id="popup-add-post">
+        <!--Затемняющий фон-->
+        <div class="popup__content">
+            <button class="popup__close-button" id="close-button-popup-add-post" type="button" name="close-form"><!--Кнопка закрытия формы--></button>
+            <form class="form" name="add-post">
+                <!--Начало формы-->
+                <h2 class="form__title">Новое место</h2>
+                <!--Заголовок формы-->
+                <!--Контейнер для полей-->
+                <div class="form__items">
+                    <input type="text" required placeholder="Название" class="form__item" name="post-name" id="input-title-post">
+                    <input type="text" required placeholder="Ссылка на картинку" class="form__item" name="post-image" id="input-post-image">
+                </div>
+                <!--Кнопка отправки-->
+                <button type="button" class="form__submit-button" name="button-create-post" id="button-submit-add-post">Создать</button>
+            </form>
+        </div>
+    </div>
+    <template id="template-card">
+        <div class="card">
+            <img class="card__image" alt="Не удалось загрузить изображение">
+            <button class="card__button-delete" type="button" name="delete"></button>
+            <h2 class="card__title"></h2>
+            <button class="card__like" type="button" name="like"></button>
+        </div>
+    </template>
+    <div class="popup" id="popup-card">
+        <div class="popup__content">
+            <button class="popup__close-button" id="close-button-popup-card"></button>
+            <figure class="popup__figure">
+                <img src="none" class="popup__image" alt="Не удалось загрузить картинку">
+                <figcaption class="popup__image-caption"></figcaption>
+            </figure>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
